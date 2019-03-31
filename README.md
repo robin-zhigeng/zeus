@@ -1,4 +1,7 @@
 # Spring Cloud脚手架项目
+> Springboot: 2.1.3.RELEASE 
+>
+> Springcloud: Greenwich.SR1 
 ### 项目结构
 ```
 zeus // 父工程
