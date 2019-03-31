@@ -1,0 +1,16 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: consumer-feign
+  zipkin:
+    base-url: http://localhost:9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8801/eureka/,http://peer2:8802/eureka/
+feign:
+  hystrix:
+    enabled: true

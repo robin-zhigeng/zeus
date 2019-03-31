@@ -1,0 +1,19 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: zuul
+  zipkin:
+    base-url: http://localhost:9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8801/eureka/,http://peer2:8802/eureka/
+
+zuul:
+  routes:
+    api-a:
+      service-id: consumer-feign
+      path: /api-a/**
